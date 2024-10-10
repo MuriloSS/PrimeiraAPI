@@ -1,25 +1,15 @@
-import { request, Router } from "express";
+import { Router } from "express";
+import {workoutController} from '../../controllers/workoutController.js';
 
 export const router = Router();
 
 router
-    .get("/", (req, res)=>{
-        res.send("Get all workouts");
-    })
+    .get("/", workoutController)
+    .get("/:workoutId", controllerWorkouts)
 
-    .get("/:workoutId", (req, res)=>{
-        res.send(`Get workout ${req.params.workoutId}`);
-    })
+    .post("/:workoutId", controllerWorkouts.postWorkout)
 
-    .post("/:workoutId", (req, res)=>{
-        res.send(`Posting workout ${req.params.workoutId}`);
-    })
+    .put("/:workoutId", controllerWorkouts.putWorkout)
 
-    .put("/:workoutId", (req, res)=>{
-        res.send(`Created workout ${req.params.workoutId}`);
-    })
-
-    .delete("/:workoutId", (req, res)=>{
-        res.send(`Deleting workout ${req.params.workoutId}`);
-    })
+    .delete("/:workoutId", controllerWorkouts.deleteOneWorkout)
 
