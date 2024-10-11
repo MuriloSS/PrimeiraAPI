@@ -6,12 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res)=>{
-    res.send(`<h1>Olááááa</h1> ${res.links.toString()}`);
+    res.send(`<h1>Olááááa</h1> ${res.links}`);
 });
 
 app.use("/api/v1/workouts", v1WorkoutRouter);
 
 app.listen(PORT, ()=>{
-    console.log(`Servidor rodando na porta ${PORT}`);
-    
-})
+    console.log(`Servidor rodando na porta ${PORT}`);    
+});
