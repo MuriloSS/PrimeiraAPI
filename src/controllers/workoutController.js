@@ -1,29 +1,30 @@
+import * as WorkoutService from "../services/workoutService.js"
 
 const getAllWorkouts = (req, res) => {  
-    res.send('Get all workouts');
+    res.send(WorkoutService.getAllWorkouts);
 };
 
 const getWorkoutById = (req, res) => {
     const { workoutId } = req.params;
-    res.send(`Get workout ${workoutId}`);
+    res.send(WorkoutService.getWorkoutById(workoutId));
 };
 
 const createNewWorkout = (req, res) => {
     const { workoutId } = req.params;
-    res.send(`Posting workout ${workoutId}`);
+    res.send(WorkoutService.createNewWorkout(workoutId));
 };
 
 const putWorkout = (req, res) => {
     const { workoutId } = req.params;
-    res.send(`Updating workout ${workoutId}`);
+    res.send(WorkoutService.putWorkout(workoutId));
 };
 
 const deleteOneWorkout = (req, res) => {
     const { workoutId } = req.params;
-    res.send(`Deleting workout ${workoutId}`);
+    res.send(WorkoutService.deleteOneWorkout(workoutId));
 };
 
-export{ 
+export{
     getAllWorkouts,
     getWorkoutById,
     createNewWorkout,
