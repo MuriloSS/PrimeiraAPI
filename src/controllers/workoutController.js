@@ -1,5 +1,5 @@
 
-export const getAllWorkouts = (req, res) => {  
+const getAllWorkouts = (req, res) => {  
     res.send('Get all workouts');
 };
 
@@ -9,11 +9,6 @@ const getWorkoutById = (req, res) => {
 };
 
 const createNewWorkout = (req, res) => {
-    const { workoutId } = req.params;
-    res.send(`Created workout ${workoutId}`);
-};
-
-const postWorkout = (req, res) => {
     const { workoutId } = req.params;
     res.send(`Posting workout ${workoutId}`);
 };
@@ -28,13 +23,12 @@ const deleteOneWorkout = (req, res) => {
     res.send(`Deleting workout ${workoutId}`);
 };
 
-
-/*exports = { 
+export{ 
     getAllWorkouts,
     getWorkoutById,
-    postWorkout,
+    createNewWorkout,
     putWorkout, 
     deleteOneWorkout,
-    createNewWorkout
-};*/
+    
+};
 

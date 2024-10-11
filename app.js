@@ -1,5 +1,5 @@
 import express from "express";
-import { router as v1WorkoutRouter } from "./src/v1/routes/workoutsRoutes";
+import { router as v1WorkoutRouter } from "./src/v1/routes/workoutsRoutes.js";
 
 const app = express();
 
