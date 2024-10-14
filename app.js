@@ -12,5 +12,5 @@ app.get("/", (req, res)=>{
 app.use("/api/v1/workouts", v1WorkoutRouter);
 
 app.listen(PORT, ()=>{
-    console.log(`Servidor rodando na porta ${PORT}`);    
-});
+    console.log(`Servidor rodando na porta ${PORT}`); 
+}); 

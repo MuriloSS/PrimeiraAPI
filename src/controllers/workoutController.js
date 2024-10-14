@@ -2,6 +2,7 @@ import * as WorkoutService from "../services/workoutService.js"
 
 const getAllWorkouts = (req, res) => {  
     res.send(WorkoutService.getAllWorkouts);
+
 };
 
 const getWorkoutById = (req, res) => {

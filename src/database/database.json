@@ -1,0 +1,24 @@
+{
+    "workouts":[
+        {
+            "id": 1,
+            "name":"Agachamento",
+            "Equipament":"barra com anilhas"
+        },
+        {
+            "id": 2,
+            "name":"Supino Reto",
+            "Equipament":"barra com anilhas"
+        },
+        {
+            "id": 3,
+            "name":"Flexão de braço",
+            "Equipament":"corpo"
+        },
+        {
+            "id": 4,
+            "name":"corrida",
+            "Equipament":null
+        }
+    ]
+}

@@ -1,22 +1,23 @@
+import { dados } from "../database/db.js";
 
 const getAllWorkouts = () => {  
-    return "All Workouts returned";
+    return dados;
 };
 
 const getWorkoutById = (id) => {
-    res.send(`Get workout ${id}`);
+    return `Get workout ${id}`;
 };
 
 const createNewWorkout = () => {
-    `Posting new workout`
+   return `Posting new workout`
 };
 
 const putWorkout = (id) => {
-    `Updating workout ${id}`
+   return `Updating workout ${id}`
 };
 
 const deleteOneWorkout = (id) => {
-    `Deleting workout ${id}`
+   return `Deleting workout ${id}`
 };
 
 export{
